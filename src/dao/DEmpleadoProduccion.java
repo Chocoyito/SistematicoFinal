@@ -41,8 +41,10 @@ public class DEmpleadoProduccion implements IOperaciones{
             cadena += "Id: " + listaOficina.get(i).getId() + "\n";
             cadena += "Nombre: " + listaOficina.get(i).getNombre() + "\n";
             cadena += "Apellidos: " + listaOficina.get(i).getApellidos() + "\n";
+            cadena += "Horas extras: " + listaOficina.get(i).getHorasExtras() + "\n";
             cadena += "Salario base: " + listaOficina.get(i).getSalarioBase() + "\n";
             cadena += "Salario bruto: " + listaOficina.get(i).calcularSalarioBruto() + "\n";
+            cadena += "Bono: " + listaOficina.get(i).getBono() + "\n";
             cadena += "Salario neto: " + (listaOficina.get(i).calcularSalarioNeto() + listaOficina.get(i).getBono()) + "\n\n";
         }
         JOptionPane.showMessageDialog(null, cadena);

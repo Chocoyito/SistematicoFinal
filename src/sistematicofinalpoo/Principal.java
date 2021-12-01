@@ -48,5 +48,4 @@ public class Principal {
         daoOficina.mostrarRegistros();
         daoProduccion.mostrarRegistros();
     }
-    
 }
